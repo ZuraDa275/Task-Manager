@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap');
+
+.login-container{
+    margin: auto 15em;
+    aspect-ratio: 3/1.5;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: -10px 9px 29px -12px rgba(0,0,0,0.76);
+}
+.login-info{
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-title{
+    font-family: "Quicksand";
+    font-size: 5em;
+}
+.welcome-back-container{
+    aspect-ratio: 1/1;
+    background: linear-gradient(169deg, rgba(255,156,0,1) 30%, rgba(238,94,93,1) 70%);
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome-back-title{
+    font-family: "Quicksand";
+    font-size: 4em;
+}
+.welcome-back-desc{
+    font-family: "Poppins";
+    font-size: 1.4em;
+}
+
+.login-input{
+    display: grid;
+    place-items: center;
+    gap: 1.3em;
+}
+.user-inputs{
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.3em;
+    background-color: #eeeeee;
+    border-color: transparent;
+    margin-bottom: 1.5em;
+}
+.user-inputs::placeholder{
+    color: rgb(113, 108, 108);
+    font-family: "Quicksand";
+    font-size: 1.12em;
+}
+.user-inputs:focus{
+    outline: 1px solid grey
+}
+.login-button{
+    width: 40%;
+    padding: 0.7rem;
+    background-color: #ff4b2b;
+    color: white;
+    border-color: transparent;
+    font-family: "Poppins";
+    font-size: 1.3em;
+    border-radius: 50px;
+    letter-spacing: 0.5ch;
+    cursor: pointer;
+}
+.not-a-user{
+    font-family: "Raleway";
+    font-size: 1.5em;
+}
+.input-container{
+    width: 80%;
+    font-family: "Poppins";
+}

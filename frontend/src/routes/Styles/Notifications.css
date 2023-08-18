@@ -1,0 +1,61 @@
+.notif-container{
+display: grid;
+/* place-items: center; */
+grid-template-columns: 1fr 2fr;
+gap:3em;
+}
+
+.notif-nav{
+    margin-left: auto;
+    text-align: left;
+    font-family: "Quicksand";
+    font-size: 1.4em;
+}
+.notif-nav > p{
+    cursor: pointer;
+    padding: .5em;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.notif-nav > button{
+    margin-top: 1em;
+    cursor: pointer;
+    padding: .8em;
+    font-size: .8em;
+    background-color:#e76062;   
+    border-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-family: "Raleway";
+    transition: background-color .2s linear;
+}
+
+.notif-nav > button:hover{
+    background-color:#372727;
+}
+.notif-messages{
+    margin-top: 5em;
+}
+.individual-notifs{
+    width: 75%;
+    text-align: left;
+    padding: 0.8em;
+    background-color: #fff;
+    margin-bottom: 2em;
+    box-shadow: 10px 10px 15px -8px rgba(0,0,0,0.4);
+    transition:  transform 0.2s cubic-bezier(0.28, 0.61, 0, 0.97);
+    font-family: "Quicksand";
+    font-size: 1.3em;
+    /* cursor: pointer; */
+}
+.individual-notifs:hover{
+    transform: scale(1.05);
+}
+.accordion-style{
+    outline: 5px solid white;
+    font-family: "Quicksand";
+}
+.colored{
+    color: #E76062
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap');
+
+.register-container{
+    margin: 0 auto;
+    width: 35%;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    box-shadow: 1px 10px 34px -4px rgba(0,0,0,0.75);
+}
+.register-info{
+    width: 100%;
+    border-radius: 15px;
+    aspect-ratio: 1;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.2em;
+}
+
+.register-title{
+    font-family: "Quicksand";
+    font-size: 4em;
+}   
+.register-input{
+    display: grid;
+    place-items: center;
+    gap: 1.5em;
+}
+.register-inputs{
+    padding: 0.5rem;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: #eeeeee;
+    border-color: transparent;
+}
+.register-inputs::placeholder{
+    color: rgb(113, 108, 108);
+    font-family: "Quicksand";
+}
+.register-inputs:focus{
+    outline: 1px solid black
+}
+.register-button{
+    width: 40%;
+    padding: 0.7rem;
+    font-size: 1.3em;
+    background-color: #ff4b2b;;
+    color: white;
+    border-color: transparent;
+    font-family: "Poppins";
+    border-radius: 50px;
+    letter-spacing: 0.5ch;
+    cursor: pointer;
+}
+.not-a-user{
+    font-family: "Raleway";
+}
+
+.input-container{
+    width: 80%;
+    font-family: "Poppins"
+}

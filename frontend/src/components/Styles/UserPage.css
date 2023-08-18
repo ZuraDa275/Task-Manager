@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.user-directions {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+.user-welcome {
+  font-family: "Quicksand";
+  font-size: 2em;
+}
+.user-info-display {
+  font-family: "Raleway";
+  display: flex;
+  padding-right: 3em;
+}
+.add-task {
+  margin-left: auto;
+  cursor: pointer;
+  padding: 1.5rem 1.8rem;
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: #e76062;
+  color: white;
+  font-family: "Poppins";
+  font-size: 1.125em;
+  box-shadow: 10px 10px 30px -8px rgba(0, 0, 0, 0.4);
+  align-self: flex-start;
+}
+.main-task-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.task-display-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.status {
+  margin-right: auto;
+  padding-left: 2em;
+}
+
+.individual-tasks {
+  width: 80%;
+  text-align: left;
+  padding: 0 0.5em 0 1.3em;
+  background-color: #fff;
+  margin-bottom: 2em;
+  box-shadow: 10px 10px 15px -8px rgba(0, 0, 0, 0.4);
+  border-left: 10px solid #fff;
+  transition: border-left 0.2s cubic-bezier(0.28, 0.61, 0, 0.97),
+    transform 0.2s cubic-bezier(0.28, 0.61, 0, 0.97);
+}
+.individual-tasks > div > h2 {
+  font-family: "Quicksand";
+}
+.individual-tasks > p {
+  font-family: "Raleway";
+  margin-top: -0.2em;
+}
+.individual-tasks:hover {
+  border-left: 10px solid #e76062;
+  transform: scale(1.125);
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.title-bar > p {
+  font-family: "Raleway";
+  font-weight: 700;
+  padding: 0.5em;
+  border-radius: 0.7vw;
+}
+.update-n-delete {
+  opacity: 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+.individual-tasks:hover .update-n-delete {
+  opacity: 1;
+}
+
+.sidebar-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  /* transform: translateX(-1000%); */
+  position: fixed;
+  background: #f6e199;
+  color: #e76062;
+  font-family: "Quicksand";
+  font-size: 1.3em;
+  box-shadow: 10px 10px 15px -8px rgba(0, 0, 0, 0.4);
+  z-index: 13213213;
+  gap: 15em;
+  transition: width 0.5s cubic-bezier(0.54, -0.27, 0.18, 1.04);
+}
+.sidebar-toggle {
+  width: 200px;
+}
+.sidebar-links {
+  text-decoration: none;
+  color: #e76062;
+}
+.sidebar-link-container {
+  margin-top: 10em;
+  /* text-align: left; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-1 {
+  transform: translateX(60px);
+  transition: transform 0.5s ease;
+}
+.section-1 > * {
+  transform: scale(1.3);
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+.section-2 {
+  transform: translateX(-1000%);
+  transition: transform 0.5s cubic-bezier(0.54, -0.27, 0.18, 1.04);
+}
+.section-2 > * {
+  margin-bottom: 2em;
+  transform: translate(10px, -5px);
+  text-align: left;
+  cursor: pointer;
+}
+.toggle-1 {
+  transform: translateX(0);
+}
+.toggle-2 {
+  transform: translateX(0);
+}
+.section-2 > *::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e76062;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.section-2 > *:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.upcoming-date {
+  font-family: "Montserrat";
+}
+.little-changes {
+  transform: translateX(-5px);
+}
+
+.individual-comment-mutation {
+  opacity: 0;
+  margin-right: 0.5em;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.individual-comments:hover .individual-comment-mutation {
+  opacity: 1;
+}
+.blinker-time {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+  width: 70%;
+}

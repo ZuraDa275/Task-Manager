@@ -1,0 +1,15 @@
+input[name="update-date-picker"] {
+     scale: 1;
+     width: auto;
+ }
+ 
+ input[name="update-date-picker"]::-webkit-datetime-edit-fields-wrapper { 
+   display:block;
+  }
+  input[name="update-date-picker"]::-webkit-calendar-picker-indicator {
+    cursor:pointer
+ }
+.timing-container-1{
+    display: flex;
+    column-gap: 4ch;
+}

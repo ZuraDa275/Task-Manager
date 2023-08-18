@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+.add-task-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 5em;
+}
+.timing-container{
+    display: flex;
+    width: 80%;
+    column-gap: 3ch;
+}
+
+.error-messages{
+    color: red;
+    font-size: 1.125em;
+    margin-top: -1em;
+}
+.start-time{
+    color: rgb(62, 61, 61);
+    font-size: 1.5em;
+}
+.start-time::after{
+    content: "Start Time";
+    position: absolute;
+    margin: -5.5rem 0 0 -0.9rem;
+    font-size: 0.8em;
+    background-color: #583b3b;
+    color:white;
+    padding: 0.3em;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.2s linear 0s;
+}
+.start-time:hover::after{
+    opacity:1;
+}
+.input-container-1{
+    display: grid;
+    width: 40%;
+    font-family: "Poppins";
+    gap: 1.2em;
+    margin-left: 4em;
+}
+.input-container-1 > textarea{
+    font-family: "Poppins";
+}
+.add-task-1{
+    align-self: center;
+    cursor:pointer;
+    padding: 0.8em;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color:#e76062;
+    transition: background-color 0.2s linear 0s;
+    color: white;
+    font-family: "Raleway";
+    font-size: 1.125em;
+    transform: translateY(-15px);
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.4);
+}
+.add-task-1:hover{
+    background-color:#372727;
+}
+.arrow-go-back{
+    background: #e76062;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid #e76062;
+    scale: 1.5
+}
+.arrow-go-back:hover{
+    background: white;
+    color: #e76062;
+}
+select:required:invalid {
+    color:  rgb(113, 108, 108);
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: black;
+  }

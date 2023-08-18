@@ -1,0 +1,40 @@
+input[name="main-date-picker"] {
+    scale: 3;
+    width: 19.8px;
+    outline: transparent;  
+    border:transparent;
+    color: rgb(217, 82, 82);
+ }
+ 
+ input[name="main-date-picker"] ::-webkit-datetime-edit-fields-wrapper { 
+   display:none;
+   
+  }
+  input[name="main-date-picker"] ::-webkit-calendar-picker-indicator {
+    cursor:pointer
+ }
+
+ .blinker{
+  border: 2px solid rgba(255, 177, 66, 1);
+	box-shadow: 0 0 0 0 rgba(255, 177, 66, 1);
+animation: pulse-yellow 2s infinite;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+ }
+ @keyframes pulse-yellow {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 177, 66, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 177, 66, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 177, 66, 0);
+	}
+}

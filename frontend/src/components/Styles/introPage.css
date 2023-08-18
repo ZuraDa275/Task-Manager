@@ -1,0 +1,102 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+.intro-navbar-container{
+    margin: 1em 1em 2em 1em;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid #f4f4f4;
+}
+
+.intro-navbar{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 3em;
+    gap: 2em;
+}
+
+.web-name{
+    margin-left: 3em;
+    text-align: justify;
+    font-family: "Quicksand";
+    font-size: 2em;
+    background: #e76062;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.2ch;
+}
+
+.intro-navbar-elements{
+    list-style: none;
+}
+
+.intro-navbar-links{
+    padding: 0.7em;
+    cursor: pointer;
+    border-color: transparent;
+    font-family: "Poppins";
+    font-size: 1.2em;
+}
+
+.login{
+    background: white;
+    color:#e76062;
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.4);
+}
+.signup{
+    background:  #e76062;
+    color: white;
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.7);
+}
+.intro-welcome{
+    margin: auto 2em;
+    aspect-ratio: 3/1.15;
+    background: linear-gradient(138deg, rgba(255,156,0,1) 30%, rgba(238,94,93,1) 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 26px -8px rgba(0,0,0,1);
+}
+.intro-welcome-sign{
+    width: 350px;
+    aspect-ratio: 1;
+    background: white;
+    border-radius: 50%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#e76062;
+    font-family: "Raleway";
+}   
+.intro-desc{
+    margin-top: -1em;
+    line-height: rem;
+}
+.intro-desc h1{
+    font-size: 4em;
+    letter-spacing: 0.2ch;
+    margin-top: -0.2em;
+}
+.intro-desc h3{
+    margin-top: -1em;
+    letter-spacing: 0.5ch;
+    font-size: 1.5em;
+}
+.intro-quote{
+    margin-top: 3em;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.5em;
+    letter-spacing: 0.5ch;
+}

@@ -1,0 +1,55 @@
+.edit-profile-header{
+    display:flex;
+    padding: 5em 0 2em 10em;
+    border-bottom:  3px solid #f4f4f4;
+}
+.edit-profile-header h1{
+    font-family: 'Raleway';
+    letter-spacing: 1ch;
+    color: #e76062
+}
+.edit-profile-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15em
+}
+.edit-profile-inputs-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+    transform: translateY(-5em);
+}
+.edit-profile-inputs{
+    padding: 0.7rem;
+    font-size: 1.3em;
+    background-color: #eeeeee;
+    border-color: transparent;
+    margin-bottom: 1.5em;
+}
+.edit-profile-labels{
+    margin-right: auto;
+    font-size: 1.5em;
+    font-family: Raleway;
+    margin-bottom: 1em; 
+}
+.save-changes{
+    margin-right:auto;
+    margin-top:1.4em;
+    align-self: center;
+    cursor:pointer;
+    padding: 0.8em;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color:#e76062;
+    transition: background-color 0.2s linear 0s;
+    color: white;
+    font-family: "Raleway";
+    font-size: 1.125em;
+    transform: translateY(-15px);
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.4);
+}
+.save-changes:hover{
+    background-color:#372727;
+}
